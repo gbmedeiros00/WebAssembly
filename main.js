@@ -23,11 +23,11 @@ function fibJS(n) {
 console.log("Iniciando benchmark para Fibonacci(42)...");
 
 console.time('Tempo JavaScript');
-const resJS = fibJS(40);
+const resJS = fibJS(42);
 console.timeEnd('Tempo JavaScript');
 
 console.time('Tempo WebAssembly');
-const resWasm = wasmFib(40);
+const resWasm = wasmFib(42);
 console.timeEnd('Tempo WebAssembly');
 
 console.log("Resultado final:", resWasm);
